@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("model-games.php")
   
-$pageTitle="Games";
+$pageTitle="games";
 include "view-header.php";
 $Games = selectGames();
 include "view-games.php";
