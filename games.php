@@ -1,8 +1,8 @@
 <?php
 require_once("util-db.php");
-require_once("model-games.php")
+require_once("model-games.php");
   
-$pageTitle="games";
+$pageTitle ="games";
 include "view-header.php";
 $Games = selectGames();
 include "view-games.php";
