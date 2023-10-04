@@ -2,7 +2,7 @@
 function selectDLC() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT dlc_id,dlc_name,dlc_number FROM `dlc` ");
+        $stmt = $conn->prepare("SELECT dlc_id,dlc_name,dlc_number FROM `DLC` ");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
