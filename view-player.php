@@ -6,6 +6,7 @@
        <th>ID</th>
     <th>Name</th>
     <th>Gender</th>
+      <th></th>
     </tr>
   </thead>
     <tbody>
@@ -16,6 +17,12 @@ while($player = $player->fetch_assoc()) {
     <td><?php echo $player['player_id']; ?></td>
     <td><?php echo $player['player_name']; ?></td>
     <td><?php echo $player['player_gender']; ?></td>
+    <td>
+      <form method = "post" action ="profile-of-player.php">
+  <input type="hidden" name="pid" value="<?php echo $player['player_id']; ?>">
+        <button type="submit" class="btn btn-primary">Profile</button>
+      </form>
+    </td>
   </tr>
 <?php
 }
