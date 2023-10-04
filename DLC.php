@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-dlc.php");
+require_once("model-DLC.php");
   
 $pageTitle ="DLC";
 include "view-header.php";
