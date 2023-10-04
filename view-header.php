@@ -28,6 +28,9 @@
         <li class="nav-item">
           <a class="nav-link" href="games-with-players.php">Games with players</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="DLC.php">DLC</a>
+        </li>
       </ul>
     </div>
   </div>
