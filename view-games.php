@@ -6,6 +6,7 @@
        <th>ID</th>
     <th>Name</th>
     <th>Number</th>
+      <th></th>
     </tr>
   </thead>
     <tbody>
@@ -16,6 +17,7 @@ while($game = $games->fetch_assoc()) {
     <td><?php echo $game['game_id']; ?></td>
     <td><?php echo $game['game_name']; ?></td>
     <td><?php echo $game['game_number']; ?></td>
+    <td><a href="player-of-game.php?id=<?php echo $game['game_id']; ?>">Player</a</td>
   </tr>
 <?php
 }
