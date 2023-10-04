@@ -12,7 +12,7 @@
   </thead>
     <tbody>
 <?php
-while($profile = $profile->fetch_assoc()) {
+while($profile = $profiles->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $profile['player_id']; ?></td>
