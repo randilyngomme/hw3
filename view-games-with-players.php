@@ -8,7 +8,7 @@ while($game = $Games->fetch_assoc()) {
       <h5 class="card-title">><?php echo $game['game_name']; ?></h5>
       <p class="card-text">
 <?php
-        $games= selectGameWithPlayer($game['game_id']);
+        $Players= selectGameWithPlayer($game['game_id']);
         while($player=$Players->fetch_assoc()){
           ?>
           <?php
