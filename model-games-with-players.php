@@ -12,7 +12,7 @@ function selectGames() {
         throw $e;
     }
 }
-function selectPlayerWithGame($gid) {
+function selectGameWithPlayer($gid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT p.player_id,player_name,player_gender,platform,device FROM `player` p join profile pf on pf.player_id= pf.player_id WHERE pf.game_id=? ");
