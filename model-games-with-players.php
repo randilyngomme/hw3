@@ -12,7 +12,6 @@ function selectGames() {
         throw $e;
     }
 }
-<?php
 function selectPlayerOfGame($gid) {
     try {
         $conn = get_db_connection();
@@ -28,4 +27,4 @@ function selectPlayerOfGame($gid) {
     }
 }
 ?>
-?>
+
