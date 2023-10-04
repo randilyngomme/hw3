@@ -17,7 +17,7 @@ while($dlc = $DLC->fetch_assoc()) {
     <td><?php echo $DLC['dlc_id']; ?></td>
     <td><?php echo $DLC['dlc_name']; ?></td>
     <td><?php echo $DLC['dlc_number']; ?></td>
-    <td><a href="player-of-game.php?id=<?php echo $game['game_id']; ?>">Player</a</td>
+    
   </tr>
 <?php
 }
