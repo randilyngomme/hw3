@@ -5,7 +5,7 @@ while($game = $Games->fetch_assoc()) {
 ?>
    <div class="card">
     <div class="card-body">
-      <h5 class="card-title">><?php echo $game['game_name']; ?></h5>
+      <h5 class="card-title"><?php echo $game['game_name']; ?></h5>
       <p class="card-text">
 <?php
         $Players= selectGameWithPlayer($game['game_id']);
