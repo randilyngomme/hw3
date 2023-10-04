@@ -13,9 +13,9 @@
 while($player = $player->fetch_assoc()) {
 ?>
   <tr>
-    <td><?php echo $game['player_id']; ?></td>
-    <td><?php echo $game['player_name']; ?></td>
-    <td><?php echo $game['player_gender']; ?></td>
+    <td><?php echo $player['player_id']; ?></td>
+    <td><?php echo $player['player_name']; ?></td>
+    <td><?php echo $player['player_gender']; ?></td>
   </tr>
 <?php
 }
