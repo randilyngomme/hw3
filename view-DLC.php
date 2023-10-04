@@ -11,7 +11,7 @@
   </thead>
     <tbody>
 <?php
-while($game = $DLC->fetch_assoc()) {
+while($dlc = $DLC->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $DLC['dlc_id']; ?></td>
