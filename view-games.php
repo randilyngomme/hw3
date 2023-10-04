@@ -5,7 +5,7 @@
     <tr>
        <th>ID</th>
     <th>Name</th>
-    <th>Office</th>
+    <th>Number</th>
     </tr>
   </thead>
     <tbody>
