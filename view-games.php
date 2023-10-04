@@ -11,7 +11,7 @@
   </thead>
     <tbody>
 <?php
-while($game = $games->fetch_assoc()) {
+while($game = $game->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $game['game_id']; ?></td>
