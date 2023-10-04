@@ -12,7 +12,7 @@ while($game = $Games->fetch_assoc()) {
         $Players= selectGameWithPlayer($game['game_id']);
         while($player=$Players->fetch_assoc()){
           ?>
-             <li class="list-group-item"><?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?></li>
+             <li class="list-group-item"><?php echo $profile['player_name']; ?>-<?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?></li>
           <?php
         }
 ?>
