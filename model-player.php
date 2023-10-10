@@ -12,4 +12,20 @@ function selectPlayer() {
         throw $e;
     }
 }
+
+function insertPlayer($pName,$pGender) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `player` (`player_name`, `player_gender`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $pName,$pGender);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
+
+
