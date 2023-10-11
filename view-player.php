@@ -1,6 +1,6 @@
 <div class="row">
   <div class ="col">
-    <h1>Player <3</h1>
+    <h1>Players</h1>
   </div>
     <div class="col-auto">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
