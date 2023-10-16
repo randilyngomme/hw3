@@ -25,6 +25,7 @@
     <label for="pGender" class="form-label">Player Gender</label>
     <input type="text" class="form-control" id="pGender" name="pGender" >
   </div>
+       <input type="hidden" name="actionType" value="Add">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
       </div>
