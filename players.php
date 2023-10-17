@@ -10,7 +10,7 @@ if (isset($_POST['actionType']))
   switch($_POST['actionType'])
     {
       case "Add":
-      InsertPlayer{$_POST['pName'], $_POST['pGender']
+      InsertPlayer{$_POST['pName'], $_POST['pGender']}
         break;
     }
 }
