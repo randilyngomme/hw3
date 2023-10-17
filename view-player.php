@@ -30,6 +30,9 @@ while($player = $Players->fetch_assoc()) {
     <td><?php echo $player['player_name']; ?></td>
     <td><?php echo $player['player_gender']; ?></td>
     <td>
+      <?php
+    include "view-player-editform.php";
+      ?>
     </td>
     <td>
          <form method = "post" action ="">
