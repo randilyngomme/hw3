@@ -10,7 +10,11 @@ if (isset($_POST['actionType']))
   switch($_POST['actionType'])
     {
       case "Add":
-      InsertPlayer($_POST['pName'], $_POST['pGender']);
+      if (InsertPlayer($_POST['pName'], $_POST['pGender'])){
+        echo '<div class="alert alert-success" role="alert">Player added!</div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert">Error</div>';
+      }
         break;
     }
 }
