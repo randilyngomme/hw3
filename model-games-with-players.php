@@ -25,6 +25,7 @@ function selectGameWithPlayer($gid) {
         $conn->close();
         throw $e;
     }
+}
 
     function insertProfile($gid,$pid,$platform,$device,$genre) {
     try {
