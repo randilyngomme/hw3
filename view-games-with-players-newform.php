@@ -41,7 +41,7 @@
              <label for="genre" class="form-label">genre</label>
              <input type="text" class="form-control" id="genre" name="genre">
            </div>
-         
+            <input tyle="hidden" name=actionType value="Add">
            <button type="submit" class="btn btn-primary">Save</button>
          </form>
       </div>
