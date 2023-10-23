@@ -27,7 +27,7 @@ function selectGameWithPlayer($gid) {
     }
 }
 
-    function insertProfile($gid,$pid,$platform,$device,$genre) {
+    function insertGamesWithPlayer($gid,$pid,$platform,$device,$genre) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `profile` (`game_id`, `player_id`,`platform`,`device`,`genre`) VALUES (?, ?,?,?,?)");
@@ -42,7 +42,7 @@ function selectGameWithPlayer($gid) {
 }
 
 
-    function updateProfile($gid,$pid,$platform,$device,$genre) {
+    function updateGamesWithPlayer($gid,$pid,$platform,$device,$genre) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `profile` (`game_id`, `player_id`,`platform`,`device`,`genre`) VALUES (?, ?,?,?,?)");
