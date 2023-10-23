@@ -20,25 +20,25 @@
       <div class="modal-body">
        <form>
            <div class="mb-3">
-             <label for="exampleInputEmail1" class="form-label">Email address</label>
+             <label for="exampleInputEmail1" class="form-label">game id</label>
              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             
            </div>
            <div class="mb-3">
-             <label for="exampleInputPassword1" class="form-label">Password</label>
+             <label for="exampleInputPassword1" class="form-label">player id</label>
              <input type="password" class="form-control" id="exampleInputPassword1">
            </div>
           <div class="mb-3">
-             <label for="exampleInputEmail1" class="form-label">Email address</label>
+             <label for="exampleInputEmail1" class="form-label">platform</label>
              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             
            </div>
            <div class="mb-3">
-             <label for="exampleInputPassword1" class="form-label">P1</label>
+             <label for="exampleInputPassword1" class="form-label">device</label>
              <input type="password" class="form-control" id="exampleInputPassword1">
            </div>
            <div class="mb-3">
-             <label for="exampleInputPassword1" class="form-label">P2</label>
+             <label for="exampleInputPassword1" class="form-label">genre</label>
              <input type="password" class="form-control" id="exampleInputPassword1">
            </div>
          
