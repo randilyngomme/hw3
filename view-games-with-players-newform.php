@@ -18,7 +18,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       <form>
+       <form method ="post" action="">
            <div class="mb-3">
              <label for="gameid" class="form-label">game id</label>
              <input type="int" class="form-control" id="gameid" name="gameid">
@@ -42,7 +42,7 @@
              <input type="text" class="form-control" id="genre" name="genre">
            </div>
          
-           <button type="submit" class="btn btn-primary">Submit</button>
+           <button type="submit" class="btn btn-primary">Save</button>
          </form>
       </div>
     </div>
