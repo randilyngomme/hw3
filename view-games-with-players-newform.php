@@ -20,26 +20,26 @@
       <div class="modal-body">
        <form>
            <div class="mb-3">
-             <label for="exampleInputEmail1" class="form-label">game id</label>
-             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             <label for="gameid" class="form-label">game id</label>
+             <input type="int" class="form-control" id="gameid" name="gameid">
             
            </div>
            <div class="mb-3">
-             <label for="exampleInputPassword1" class="form-label">player id</label>
-             <input type="password" class="form-control" id="exampleInputPassword1">
+             <label for="playerid" class="form-label">player id</label>
+             <input type="int" class="form-control" id="playerid" name="playerid">
            </div>
           <div class="mb-3">
-             <label for="exampleInputEmail1" class="form-label">platform</label>
-             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             <label for="platform" class="form-label">platform</label>
+             <input type="text" class="form-control" id="platform" name="platform">
             
            </div>
            <div class="mb-3">
-             <label for="exampleInputPassword1" class="form-label">device</label>
-             <input type="password" class="form-control" id="exampleInputPassword1">
+             <label for="device" class="form-label">device</label>
+             <input type="text" class="form-control" id="device" name="device">
            </div>
            <div class="mb-3">
-             <label for="exampleInputPassword1" class="form-label">genre</label>
-             <input type="password" class="form-control" id="exampleInputPassword1">
+             <label for="genre" class="form-label">genre</label>
+             <input type="text" class="form-control" id="genre" name="genre">
            </div>
          
            <button type="submit" class="btn btn-primary">Submit</button>
