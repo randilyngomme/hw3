@@ -40,5 +40,23 @@ function selectGameWithPlayer($gid) {
         throw $e;
     }
 }
+
+
+    function updateProfile($gid,$pid,$platform,$device,$genre) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `profile` (`game_id`, `player_id`,`platform`,`device`,`genre`) VALUES (?, ?,?,?,?)");
+        $stmt->bind_param("iisss", $gid,$pid,$platform,$device,$genre);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+
 ?>
 
