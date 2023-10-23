@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      insertGamesWithPlayer($_POST['gid'],$_POST['pid'],$_POST['platform'],$_POST['device'],$_POST['genre']);
+      insertGamesWithPlayer($_POST['gameid'],$_POST['playerid'],$_POST['platform'],$_POST['device'],$_POST['genre']);
                             break;
   }
 }
