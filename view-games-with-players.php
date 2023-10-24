@@ -46,7 +46,7 @@ while($game = $Games->fetch_assoc()) {
           </button>
         </form>
            
-              
+             } 
               
         }
 ?>
@@ -59,5 +59,4 @@ while($game = $Games->fetch_assoc()) {
 }
 ?>
   </div>
-}
-   }
+
