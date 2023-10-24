@@ -26,6 +26,19 @@ function insertDLC($dlcName,$dlcNumber) {
         throw $e;
     }
 }
+function updateDLC($dlcName,$dlcNumber,$dlcid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `DLC` set `dlc_name` = ?, `dlc_number` = ? where dlc_id=?");
+        $stmt->bind_param("ssi", $dlcName,$dlcNumber,$dlcid);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function deleteDLC($dlcid) {
     try {
         $conn = get_db_connection();
