@@ -12,4 +12,17 @@ function selectGames() {
         throw $e;
     }
 }
+function insertGames($gName,$gNumber) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `game` (`game_name`, `game_number`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $gName,$gNumber);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
