@@ -25,7 +25,7 @@
    <div class="mb-3">
     <label for="pGender<?php echo $player['player_id']; ?>" class="form-label">Player Gender</label>
     <input type="text" class="form-control" id="pGender<?php echo $player['player_id']; ?>" name="pGender" value="<?php echo $player['player_gender']; ?>">
-  </div>
+	
           <input type="hidden" name="pid" value="<?php echo $player['player_id']; ?>">
        <input type="hidden" name="actionType" value="Edit">
   <button type="submit" class="btn btn-primary">Save</button>
