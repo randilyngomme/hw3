@@ -12,4 +12,18 @@ function selectDLC() {
         throw $e;
     }
 }
+}
+function insertDLC($dlcName,$dlcNumber) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `DLC` (`dlc_name`, `dlc_number`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $dlcName,$dlcNumber);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
