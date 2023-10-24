@@ -25,4 +25,18 @@ function insertGames($gName,$gNumber) {
         throw $e;
     }
 }
+function deleteGames($gid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from player where game_id=?");
+        $stmt->bind_param("i", $gid);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 ?>
