@@ -25,7 +25,7 @@
                 <label for="gNumber" class="form-label">Game Number</label>
                 <input type="text" class="form-control" id="gNumber" name="gNumber" >
               </div>
-           
+           <input type="hidden" name="actionType" value ="Add">
               <button type="submit" class="btn btn-primary">Save</button>
             </form>
       </div>
