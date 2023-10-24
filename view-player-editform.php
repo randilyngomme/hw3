@@ -18,11 +18,11 @@
       <div class="modal-body">
         <form method="post" action="">
   <div class="mb-3">
-    <label for="gName<?php echo $game['game_id']; ?>" class="form-label">Game Name</label>
+    <label for="gName<?php echo $game['game_id']; ?>" class="form-label">game Name</label>
     <input type="text" class="form-control" id="gName<?php echo $game['game_id']; ?>" name="gName" value="<?php echo $player['player_name']; ?>">
   </div>
    <div class="mb-3">
-    <label for="gNumber<?php echo $game['game_id']; ?>" class="form-label">Game Number</label>
+    <label for="gNumber<?php echo $game['game_id']; ?>" class="form-label">game Number</label>
     <input type="text" class="form-control" id="pGender<?php echo $game['game_id']; ?>" name="gNumber" value="<?php echo $game['game_number']; ?>">
   </div>
           <input type="hidden" name="gid" value="<?php echo $game['game_id']; ?>">
