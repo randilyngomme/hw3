@@ -26,6 +26,7 @@
               <label for="dlcNumber" class="form-label">DLC Number</label>
               <input type="text" class="form-control" id="dlcNumber" name="dlcNumber">
             </div>
+          <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
           </form>
       </div>
