@@ -26,4 +26,17 @@ function insertDLC($dlcName,$dlcNumber) {
         throw $e;
     }
 }
+function deleteDLC($dlcid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from DLC where dlc_id=?");
+        $stmt->bind_param("i", $dlcid);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
