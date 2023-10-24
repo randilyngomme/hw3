@@ -12,7 +12,7 @@ function selectDLC() {
         throw $e;
     }
 }
-}
+
 function insertDLC($dlcName,$dlcNumber) {
     try {
         $conn = get_db_connection();
