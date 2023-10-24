@@ -22,7 +22,7 @@
   </div>
    <div class="mb-3">
     <label for="dlcNumber<?php echo $dlc['dlc_id']; ?>" class="form-label">DLC Number</label>
-    <input type="text" class="form-control" id="dlcNumber<?php echo $dlc['dlc_id']; ?>" name="dlcNumber" value="<?php echo $dlc['dlc_Number']; ?>">
+    <input type="text" class="form-control" id="dlcNumber<?php echo $dlc['dlc_id']; ?>" name="dlcNumber" value="<?php echo $dlc['dlc_number']; ?>">
   </div>
           <input type="hidden" name="dlcid" value="<?php echo $dlc['dlc_id']; ?>">
        <input type="hidden" name="actionType" value="Edit">
