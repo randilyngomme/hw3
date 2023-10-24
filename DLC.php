@@ -14,8 +14,7 @@ if (isset($_POST['actionType'])) {
        echo '<div class="alert alert-danger" role="alert">ERROR!</div>';
     }
       break;
-  }
-}
+
 
    case "Delete":
       if (deletePlayer($_POST['dlcid'])){
