@@ -59,3 +59,4 @@ while($game = $Games->fetch_assoc()) {
 }
 ?>
   </div>
+}
