@@ -17,6 +17,15 @@ if (isset($_POST['actionType'])) {
   }
 }
 
+   case "Delete":
+      if (deletePlayer($_POST['dlcid'])){
+        echo '<div class="alert alert-success" role="alert">DLC deleted!</div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert">Error</div>';
+      }
+        break;
+    }
+}
 
 $DLC = selectDLC();
 include "view-DLC.php";
