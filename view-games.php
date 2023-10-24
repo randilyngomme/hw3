@@ -17,6 +17,8 @@ include "view-games-newform.php";
     <th>Name</th>
     <th>Number</th>
       <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
     <tbody>
@@ -28,6 +30,16 @@ while($game = $Games->fetch_assoc()) {
     <td><?php echo $game['game_name']; ?></td>
     <td><?php echo $game['game_number']; ?></td>
     <td><a href="player-of-game.php?id=<?php echo $game['game_id']; ?>">Player</a</td>
+    
+    <td>
+      
+    </td>
+
+    <td>
+      
+    </td>
+    
+    </td>
   </tr>
 <?php
 }
