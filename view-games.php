@@ -37,7 +37,7 @@ while($game = $Games->fetch_assoc()) {
 
     <td>
       <form method = "post" action ="">
-  <input type="hidden" name="pid" value="<?php echo $game['game_id']; ?>">
+  <input type="hidden" name="gid" value="<?php echo $game['game_id']; ?>">
            <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onClick="return confirm('are you sure you wanna do that? o-O');">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
