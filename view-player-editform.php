@@ -8,24 +8,24 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editPlayerModal<?php echo $player['player_id']; ?>" tabindex="-1" aria-labelledby="editPlayerModalLabel<?php echo $player['player_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editGameModal<?php echo $game['game_id']; ?>" tabindex="-1" aria-labelledby="editGameModalLabel<?php echo $game['game_id']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="editPlayerModalLabel<?php echo $player['player_id']; ?>">Edit Player</h1>
+        <h1 class="modal-title fs-5" id="editGameModalLabel<?php echo $game['game_id']; ?>">Edit Game</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form method="post" action="">
   <div class="mb-3">
-    <label for="pName<?php echo $player['player_id']; ?>" class="form-label">Player Name</label>
-    <input type="text" class="form-control" id="pName<?php echo $player['player_id']; ?>" name="pName" value="<?php echo $player['player_name']; ?>">
+    <label for="gName<?php echo $game['game_id']; ?>" class="form-label">Game Name</label>
+    <input type="text" class="form-control" id="gName<?php echo $game['game_id']; ?>" name="gName" value="<?php echo $player['player_name']; ?>">
   </div>
    <div class="mb-3">
-    <label for="pGender<?php echo $player['player_id']; ?>" class="form-label">Player Gender</label>
-    <input type="text" class="form-control" id="pGender<?php echo $player['player_id']; ?>" name="pGender" value="<?php echo $player['player_gender']; ?>">
+    <label for="gNumber<?php echo $game['game_id']; ?>" class="form-label">Game Number</label>
+    <input type="text" class="form-control" id="pGender<?php echo $game['game_id']; ?>" name="gNumber" value="<?php echo $game['game_number']; ?>">
   </div>
-          <input type="hidden" name="pid" value="<?php echo $player['player_id']; ?>">
+          <input type="hidden" name="gid" value="<?php echo $game['game_id']; ?>">
        <input type="hidden" name="actionType" value="Edit">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
