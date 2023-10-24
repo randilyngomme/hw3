@@ -17,6 +17,8 @@ include "view-dlc-newform.php";
     <th>Name</th>
     <th>Number</th>
       <th></th>
+       <th></th>
+       <th></th>
     </tr>
   </thead>
     <tbody>
@@ -27,6 +29,14 @@ while($dlc = $DLC->fetch_assoc()) {
     <td><?php echo $dlc['dlc_id']; ?></td>
     <td><?php echo $dlc['dlc_name']; ?></td>
     <td><?php echo $dlc['dlc_number']; ?></td>
+    
+    <td>
+      
+    </td>
+    
+    <td>
+      
+    </td>
     
   </tr>
 <?php
