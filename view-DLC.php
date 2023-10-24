@@ -31,7 +31,9 @@ while($dlc = $DLC->fetch_assoc()) {
     <td><?php echo $dlc['dlc_number']; ?></td>
     
     <td>
-      
+      <?php
+      include "view-dlc-editform.php";
+        ?>
     </td>
     
     <td>
