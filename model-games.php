@@ -25,6 +25,19 @@ function insertGames($gName,$gNumber) {
         throw $e;
     }
 }
+function updateGames($gName,$gNumber,$gid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `game` set `game_name` = ?, `game_number` = ? where game_id=?");
+        $stmt->bind_param("ssi", $gName,$gNumber,$gid);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function deleteGames($gid) {
     try {
         $conn = get_db_connection();
