@@ -18,11 +18,11 @@
         <form method="post" action="">
   <div class="mb-3">
     <label for="gName<?php echo $game['game_id']; ?>" class="form-label">Game Name</label>
-    <input type="text" class="form-control" id="pName<?php echo $game['game_id']; ?>" name="gName" value="<?php echo $game['game_id']; ?>">
+    <input type="text" class="form-control" id="pName<?php echo $game['game_id']; ?>" name="gName" value="<?php echo $game['game_name']; ?>">
   </div>
    <div class="mb-3">
     <label for="gNumber<?php echo $game['game_id']; ?>" class="form-label">Game Number</label>
-    <input type="text" class="form-control" id="gNumber<?php echo $game['game_id']; ?>" name="gNumber" value="<?php echo $game['game_id']; ?>">
+    <input type="text" class="form-control" id="gNumber<?php echo $game['game_id']; ?>" name="gNumber" value="<?php echo $game['game_number']; ?>">
   </div>
           <input type="hidden" name="gid" value="<?php echo $game['game_id']; ?>">
        <input type="hidden" name="actionType" value="Edit">
