@@ -32,7 +32,9 @@ while($game = $Games->fetch_assoc()) {
     <td><a href="player-of-game.php?id=<?php echo $game['game_id']; ?>">Player</a</td>
     
     <td>
-      
+          <?php
+        include "view-games-editform.php";
+           ?>
     </td>
 
     <td>
