@@ -41,12 +41,11 @@ function selectGameWithPlayer($gid) {
     }
 }
 
-
-    function updateGamesWithPlayer($gid,$pid,$platform,$device,$genre) {
+    function updateGamesWithPlayer($gid,$pid,$platform,$device,$genre,$gwpid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `profile` (`game_id`, `player_id`,`platform`,`device`,`genre`) VALUES (?, ?,?,?,?)");
-        $stmt->bind_param("iisss", $gid,$pid,$platform,$device,$genre);
+        $stmt = $conn->prepare("update `profile` set `game_id`=?, `player_id`=?,`platform`=?,`device`=?,`genre`=? where profile_id=?);
+        $stmt->bind_param("iisssi", $gid,$pid,$platform,$device,$genre,$gwpid);
         $success=$stmt->execute();
         $conn->close();
         return $success;
