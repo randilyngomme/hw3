@@ -27,7 +27,7 @@ while($game = $Games->fetch_assoc()) {
            
    
             
-              <td>
+              <?php
               <form method="post" action="">
           <input type="hidden" name="gwpid" value="<?php echo $game['gwpid']; ?>">
           <input type="hidden" name="actionType" value="Delete">
@@ -38,7 +38,7 @@ while($game = $Games->fetch_assoc()) {
             </svg>
           </button>
         </form>
-              </td>
+              <?php
         }
 ?>
         </ul>
