@@ -41,7 +41,7 @@ function selectGameWithPlayer($gid) {
     }
 }
 
-function deletePlayer($gwpid) {
+function deleteGamesWithPlayer($gwpid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from profile where profile_id=?");
