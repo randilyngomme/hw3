@@ -30,7 +30,11 @@
            </div>
            <div class="mb-3">
              <label for="playerid<?php echo $player['profile_id']; ?>" class="form-label">player</label>
-             <input type="int" class="form-control" id="playerid<?php echo $player['profile_id']; ?>" name="playerid" value="<?php echo $player['profile_id']; ?>">
+<?php
+$playerList = selectPlayersForInput();
+$selectedPlayers=$player['player_id'];
+include "view-player-input-list.php";
+?>
            </div>
           <div class="mb-3">
              <label for="platform<?php echo $player['profile_id']; ?>" class="form-label">platform</label>
