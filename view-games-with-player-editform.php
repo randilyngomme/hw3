@@ -30,16 +30,16 @@
            </div>
           <div class="mb-3">
              <label for="platform<?php echo $player['profile_id']; ?>" class="form-label">platform</label>
-             <input type="text" class="form-control" id="platform<?php echo $player['profile_id']; ?>" name="platform" value="<?php echo $player['profile_platform']; ?>">
+             <input type="text" class="form-control" id="platform<?php echo $player['profile_id']; ?>" name="platform" value="<?php echo $player['platform']; ?>">
             
            </div>
            <div class="mb-3">
              <label for="device<?php echo $player['profile_id']; ?>" class="form-label">device</label>
-             <input type="text" class="form-control" id="device<?php echo $player['profile_id']; ?>" name="device" value="<?php echo $player['profile_device']; ?>">
+             <input type="text" class="form-control" id="device<?php echo $player['profile_id']; ?>" name="device" value="<?php echo $player['device']; ?>">
            </div>
            <div class="mb-3">
              <label for="genre<?php echo $player['profile_id']; ?>" class="form-label">genre</label>
-             <input type="text" class="form-control" id="genre<?php echo $player['profile_id']; ?>" name="genre" value="<?php echo $player['profile_genre']; ?>">
+             <input type="text" class="form-control" id="genre<?php echo $player['profile_id']; ?>" name="genre" value="<?php echo $player['genre']; ?>">
            </div>
          <input type="hidden" name="gwpid" value="<?php echo $player['profile_id']; ?>">
             <input type="hidden" name=actionType value="Edit">
