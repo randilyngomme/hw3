@@ -20,13 +20,13 @@
       <div class="modal-body">
        <form method ="post" action="">
            <div class="mb-3">
-             <label for="gameid" class="form-label">game id</label>
-             <input type="int" class="form-control" id="gameid" name="gameid">
+             <label for="gameid<?php echo $player['profile_id']; ?>" class="form-label">game id</label>
+             <input type="int" class="form-control" id="gameid<?php echo $player['profile_id']; ?>" name="gameid" value="<?php echo $player['profile_id']; ?>">
             
            </div>
            <div class="mb-3">
              <label for="playerid<?php echo $player['profile_id']; ?>" class="form-label">player id</label>
-             <input type="int" class="form-control" id="playerid<?php echo $player['profile_id']; ?>" name="playerid">
+             <input type="int" class="form-control" id="playerid<?php echo $player['profile_id']; ?>" name="playerid" value="<?php echo $player['profile_id']; ?>">
            </div>
           <div class="mb-3">
              <label for="platform<?php echo $player['profile_id']; ?>" class="form-label">platform</label>
