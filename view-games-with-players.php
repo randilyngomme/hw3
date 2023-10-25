@@ -32,6 +32,7 @@ while($game = $Games->fetch_assoc()) {
            
                     ?>
               </div>
+               <div class="col-auto">
               <form method="post" action="">
           <input type="hidden" name="gwpid" value="<?php echo $player['profile_id']; ?>">
           <input type="hidden" name="actionType" value="Delete">
