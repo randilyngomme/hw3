@@ -24,7 +24,7 @@ while($game = $Games->fetch_assoc()) {
              <li class="list-group-item"><?php echo $player['player_name']; ?>-<?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?></li>
          
               <form method="post" action="">
-          <input type="hidden" name="gwpid" value="<?php echo $game['profile_id']; ?>">
+          <input type="hidden" name="gwpid" value="<?php echo $player['profile_id']; ?>">
           <input type="hidden" name="actionType" value="Delete">
           <button type="submit" class="btn" onclick="return confirm('Are you sure? O-O');">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
