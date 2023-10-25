@@ -27,12 +27,14 @@ while($game = $Games->fetch_assoc()) {
              <li class="list-group-item">
            <div class ="row">
               <div class="col">
-           <?php echo $player['player_name']; ?>-<?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?></li>
+           <?php echo $player['player_name']; ?>-<?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?>
+           </li>
               </div>
               <div class="col-auto">
            <?php
            include "view-games-with-players-editform.php";
            ?>
+           <p class="card-text"><small class="text-body-secondary">Number:<?php echo $game['game_number']; ?> </small></p>
               </div>
               <div class="col-auto">
             <form method="post" action="">
@@ -46,13 +48,12 @@ while($game = $Games->fetch_assoc()) {
           </button>
         </form>
            
-             } 
               
         }
 ?>
         </ul>
         </p>
-      <p class="card-text"><small class="text-body-secondary">Number:<?php echo $game['game_number']; ?> </small></p>
+      
     </div>
   </div>
 <?php
