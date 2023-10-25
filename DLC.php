@@ -31,9 +31,6 @@ if (isset($_POST['actionType'])) {
       }
         break;
 
-    <p>
-      Hello
-      </p>
     }
 }
 
