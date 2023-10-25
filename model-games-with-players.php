@@ -41,6 +41,20 @@ function selectGameWithPlayer($gid) {
     }
 }
 
+function deletePlayer($gwpid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from profile where profile_id=?");
+        $stmt->bind_param("i", $gwpid);
+        $success=$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
  
 
 
