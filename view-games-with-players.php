@@ -42,6 +42,9 @@ while($game = $Games->fetch_assoc()) {
             </svg>
           </button>
         </form>
+       </div>
+    </div>
+      </li>
               <?php
         }
 ?>
