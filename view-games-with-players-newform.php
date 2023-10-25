@@ -20,7 +20,7 @@
       <div class="modal-body">
        <form method ="post" action="">
            <div class="mb-3">
-             <label for="gameid" class="form-label">game id</label>
+             <label for="gameid" class="form-label">Game</label>
 <?php
 $gameList = selectGamesForInput();
 $selectedGames=0;
@@ -30,20 +30,24 @@ include "view-game-input-list.php";
             
            </div>
            <div class="mb-3">
-             <label for="playerid" class="form-label">player id</label>
-             <input type="int" class="form-control" id="playerid" name="playerid">
+             <label for="playerid" class="form-label">Player</label>
+<?php
+$playerList = selectPlayersForInput();
+$selectedPlayers=0;
+include "view-player-input-list.php";
+?>
            </div>
           <div class="mb-3">
-             <label for="platform" class="form-label">platform</label>
+             <label for="platform" class="form-label">Platform</label>
              <input type="text" class="form-control" id="platform" name="platform">
             
            </div>
            <div class="mb-3">
-             <label for="device" class="form-label">device</label>
+             <label for="device" class="form-label">Device</label>
              <input type="text" class="form-control" id="device" name="device">
            </div>
            <div class="mb-3">
-             <label for="genre" class="form-label">genre</label>
+             <label for="genre" class="form-label">Genre</label>
              <input type="text" class="form-control" id="genre" name="genre">
            </div>
             <input type="hidden" name=actionType value="Add">
