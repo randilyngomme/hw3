@@ -1,5 +1,4 @@
 <select class="form-select" id="gameid" name="gameid">
-  <option selected>Open this select menu</option>
 <?php 
 while($gameItem= $gameList->fetch_assoc()){
   $selText="";
