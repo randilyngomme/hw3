@@ -22,11 +22,7 @@ while($game = $Games->fetch_assoc()) {
         while($player=$Players->fetch_assoc()){
           ?>
              <li class="list-group-item"><?php echo $player['player_name']; ?>-<?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?></li>
-          <?
-
-
-
-            
+         
               <form method="post" action="">
           <input type="hidden" name="gwpid" value="<?php echo $game['gwpid']; ?>">
           <input type="hidden" name="actionType" value="Delete">
