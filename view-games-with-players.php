@@ -28,7 +28,7 @@ while($game = $Games->fetch_assoc()) {
               </div>
               <div class="col-auto">
                   <?php
-
+                include "view-games-with-player-editform.php";
            
                     ?>
               </div>
