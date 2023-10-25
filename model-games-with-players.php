@@ -26,7 +26,32 @@ function selectGameWithPlayer($gid) {
         throw $e;
     }
 }
-
+function selectGamesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT game_id,game_name FROM `game` order by game_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function selectPlayersForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT player_id,player_name FROM `player` order by player_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
     function insertGamesWithPlayer($gid,$pid,$platform,$device,$genre) {
     try {
         $conn = get_db_connection();
