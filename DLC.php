@@ -30,6 +30,10 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
         break;
+
+    <p>
+      Hello
+      </p>
     }
 }
 
