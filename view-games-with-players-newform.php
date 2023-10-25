@@ -21,7 +21,11 @@
        <form method ="post" action="">
            <div class="mb-3">
              <label for="gameid" class="form-label">game id</label>
-             <input type="int" class="form-control" id="gameid" name="gameid">
+<?php
+$gameList = selectGamesForInput();
+include "view-game-input-list.php";
+?>
+
             
            </div>
            <div class="mb-3">
