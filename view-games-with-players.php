@@ -26,7 +26,7 @@ while($game = $Games->fetch_assoc()) {
 
 
 
-              <?
+            
               <form method="post" action="">
           <input type="hidden" name="gwpid" value="<?php echo $game['gwpid']; ?>">
           <input type="hidden" name="actionType" value="Delete">
