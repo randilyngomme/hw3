@@ -12,6 +12,13 @@ if (isset($_POST['actionType'])) {
       } else {
         echo '<div class="alert alert-danger" role="alert"> ERROR!</div>';
       }
+      break;
+      case "Edit":
+      if (updateGamesWithPlayer($_POST['gameid'],$_POST['playerid'],$_POST['platform'],$_POST['device'],$_POST['genre'],$POST['gwpid'])) {
+        echo '<div class="alert alert-success" role="alert"> Player profile edited!</div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert"> ERROR!</div>';
+      }
                break;
                case "Delete":
       if (deleteGamesWithPlayer($_POST['gwpid'])) {
