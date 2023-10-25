@@ -7,14 +7,14 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertGamesWithPlayer($_POST['gameid'],$_POST['playerid'],$_POST['platform'],$_POST['device'],$_POST['genre'])) {
+      if (insertGamesWithPlayer($_POST['game_id'],$_POST['player_id'],$_POST['platform'],$_POST['device'],$_POST['genre'])) {
         echo '<div class="alert alert-success" role="alert"> Player profile added!</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> ERROR!</div>';
       }
       break;
       case "Edit":
-      if (updateGamesWithPlayer($_POST['gameid'],$_POST['playerid'],$_POST['platform'],$_POST['device'],$_POST['genre'],$_POST['gwpid'])) {
+      if (updateGamesWithPlayer($_POST['game_id'],$_POST['player_id'],$_POST['platform'],$_POST['device'],$_POST['genre'],$_POST['gwpid'])) {
         echo '<div class="alert alert-success" role="alert"> Player profile edited!</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> ERROR!</div>';
