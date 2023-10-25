@@ -4,7 +4,6 @@ require_once("model-games-with-players.php");
   
 $pageTitle ="games with players";
 include "view-header.php";
-
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
@@ -14,10 +13,15 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert"> ERROR!</div>';
       }
                break;
-                       
+               case "Delete":
+      if (deleteGamesWithPlayer($_POST['gwpid'])) {
+        echo '<div class="alert alert-success" role="alert"> Player profile deleted!</div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert"> ERROR!</div>';
+      }
+               break;            
   }
 }
-
 
 $Games = selectGames();
 include "view-games-with-players.php";
