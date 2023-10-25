@@ -23,7 +23,7 @@ while($game = $Games->fetch_assoc()) {
           ?>
              <li class="list-group-item">
            <div class="row">
-              <div class="col"
+              <div class="col">
            <?php echo $player['player_name']; ?>-<?php echo $player['player_gender']; ?> -<?php echo $player['platform']; ?>- <?php echo $player['device']; ?>
               </div>
               <div class="col-auto">
