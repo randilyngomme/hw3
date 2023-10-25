@@ -23,6 +23,7 @@
              <label for="gameid" class="form-label">game id</label>
 <?php
 $gameList = selectGamesForInput();
+$selectedGames=0;
 include "view-game-input-list.php";
 ?>
 
