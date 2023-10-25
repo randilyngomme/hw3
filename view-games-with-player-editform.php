@@ -20,12 +20,16 @@
       <div class="modal-body">
        <form method ="post" action="">
            <div class="mb-3">
-             <label for="gameid<?php echo $player['profile_id']; ?>" class="form-label">game id</label>
-             <input type="int" class="form-control" id="gameid<?php echo $player['profile_id']; ?>" name="gameid" value="<?php echo $player['profile_id']; ?>">
+             <label for="gameid<?php echo $player['profile_id']; ?>" class="form-label">game</label>
+    <?php
+    $gameList = selectGamesForInput();
+    $selectedGames=$game['game_id'];
+    include "view-game-input-list.php";
+    ?>
             
            </div>
            <div class="mb-3">
-             <label for="playerid<?php echo $player['profile_id']; ?>" class="form-label">player id</label>
+             <label for="playerid<?php echo $player['profile_id']; ?>" class="form-label">player</label>
              <input type="int" class="form-control" id="playerid<?php echo $player['profile_id']; ?>" name="playerid" value="<?php echo $player['profile_id']; ?>">
            </div>
           <div class="mb-3">
