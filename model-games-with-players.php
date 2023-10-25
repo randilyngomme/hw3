@@ -41,19 +41,7 @@ function selectGameWithPlayer($gid) {
     }
 }
 
-    function updateGamesWithPlayer($gid,$pid,$platform,$device,$genre,$gwpid) {
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("update `profile` set `game_id`=?, `player_id`=?,`platform`=?,`device`=?,`genre`=? where profile_id=?);
-        $stmt->bind_param("iisssi", $gid,$pid,$platform,$device,$genre,$gwpid);
-        $success=$stmt->execute();
-        $conn->close();
-        return $success;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
+ 
 
 
 
