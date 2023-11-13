@@ -17,9 +17,10 @@ if (isset($_POST['actionType']))
       case "Add":
       if (insertPlayer($_POST['pName'], $_POST['pGender'])){
         echo '<div class="alert alert-success" role="alert">Player added!</div>';
+       
         Swal.fire({ //move success into rj.status
     title: "Success",
-    text: success,
+    text: "success",
     icon: "success",
 
 });
