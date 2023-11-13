@@ -25,34 +25,6 @@ include "view-header.php";
 ?>
 
  
-
-<script>
-$playerData = selectPlayer();
-echo '<script>';
-echo 'const playerData = ' . json_encode($playerData) . ';';
-echo '</script>';
-<script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      datasets: [{
-        data: playerData, // Use the dynamic data here
-      }],
-      labels: [
-        'Male',
-        'Female'
-      ],
-    },
-    options: {
-      cutoutPercentage: 50,
-    }
-  });
-</script>
-
-
-
   
   const ctx = document.getElementById('myChart');
  
