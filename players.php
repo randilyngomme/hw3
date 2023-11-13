@@ -11,6 +11,44 @@ require_once("model-player.php");
 $pageTitle ="player";
 include "view-header.php";
 
+
+
+
+
+
+
+<script>
+  const ctx = document.getElementById('myChart');
+ 
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+    datasets: [{
+        data: [30, 40, 30]
+    }],
+ 
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'Red',
+        'Yellow',
+        'Blue'
+],
+      options: {
+    cutoutPercentage: 50, 
+  }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
 if (isset($_POST['actionType']))
 {
   switch($_POST['actionType'])
