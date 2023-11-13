@@ -1,3 +1,8 @@
+
+<!-- sweetalert2 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
+
 <?php
 require_once("util-db.php");
 require_once("model-player.php");
@@ -12,6 +17,12 @@ if (isset($_POST['actionType']))
       case "Add":
       if (insertPlayer($_POST['pName'], $_POST['pGender'])){
         echo '<div class="alert alert-success" role="alert">Player added!</div>';
+        Swal.fire({ //move success into rj.status
+    title: "Success",
+    text: success,
+    icon: "success",
+
+});
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
