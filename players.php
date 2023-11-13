@@ -20,17 +20,12 @@ include "view-header.php";
 
 
 
-
-
 ?>
-
- <script
-  
+<script>
   const ctx = document.getElementById('myChart');
  
   new Chart(ctx, {
-    type: 'bar',
-    width:120,
+    type: 'doughnut',
     data: {
     datasets: [{
         data: [70, 30]
@@ -48,8 +43,6 @@ include "view-header.php";
     }
   });
 </script>
-<?php
-
 
 
 
