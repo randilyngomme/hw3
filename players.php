@@ -1,41 +1,30 @@
-
-<!-- sweetalert2 -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.min.css" rel="stylesheet"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
-
-<!-- chart.js -->
 <div>
 <canvas id="myChart"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
 <?php
 require_once("util-db.php");
 require_once("model-player.php");
   
 $pageTitle ="player";
 include "view-header.php";
-
-
-
-
 ?>
 <script>
   const ctx = document.getElementById('myChart');
- 
+
   new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
+    width:30,
     data: {
     datasets: [{
-        data: [70, 30]
+        data: [30, 40, 30]
     }],
  
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Male',
-        'Female'
-        
+        'Red',
+        'Yellow',
+        'Blue'
 ],
       options: {
     cutoutPercentage: 50, 
@@ -43,11 +32,7 @@ include "view-header.php";
     }
   });
 </script>
-
-
-
-
-
+<?php
 if (isset($_POST['actionType']))
 {
   switch($_POST['actionType'])
@@ -85,10 +70,8 @@ if (isset($_POST['actionType']))
         break;
     }
 }
-
   
 $Players = selectPlayer();
 include "view-player.php";
 include "view-footer.php";
 ?>
-
