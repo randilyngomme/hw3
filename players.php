@@ -3,7 +3,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.min.css" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
 
-
+<!-- chart.js -->
 <div>
 <canvas id="myChart"></canvas>
 </div>
@@ -23,7 +23,37 @@ include "view-header.php";
 
 
 ?>
+
+ 
+
 <script>
+$playerData = selectPlayer();
+echo '<script>';
+echo 'const playerData = ' . json_encode($playerData) . ';';
+echo '</script>';
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      datasets: [{
+        data: playerData, // Use the dynamic data here
+      }],
+      labels: [
+        'Male',
+        'Female'
+      ],
+    },
+    options: {
+      cutoutPercentage: 50,
+    }
+  });
+</script>
+
+
+
+  
   const ctx = document.getElementById('myChart');
  
   new Chart(ctx, {
