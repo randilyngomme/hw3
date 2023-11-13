@@ -24,7 +24,7 @@ include "view-header.php";
 
 ?>
 
- 
+ <script
   
   const ctx = document.getElementById('myChart');
  
