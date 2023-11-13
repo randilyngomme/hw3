@@ -1,3 +1,7 @@
+<link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/>
+                    
+<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+
 <div class="row">
   <div class ="col">
     <h1>Players</h1>
@@ -52,7 +56,18 @@ while($player = $Players->fetch_assoc()) {
   }
 </style>
 
- 
+
+    
+const grid = new Grid({
+  columns: ['Name', 'Email', 'Phone Number'],
+  pagination: true,
+  data: [
+  ]
+});
+
+
+
+    
     
    <td>
   <div class="rotate-square"></div>
