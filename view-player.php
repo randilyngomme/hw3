@@ -36,6 +36,23 @@ while($player = $Players->fetch_assoc()) {
     </td>
 
 
+
+    
+
+<style>
+  .rotate-square {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db; /* Change the color as needed */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .rotate-square.rotate {
+    transform: rotate(360deg);
+  }
+</style>
+
+ 
     
     <td>
       <div class="rotate-square"></div>
@@ -47,6 +64,19 @@ while($player = $Players->fetch_assoc()) {
         </button>
     </td>
 
+
+<script>
+  function rotateSquare() {
+    var square = document.querySelector('.rotate-square');
+    square.classList.toggle('rotate');
+  }
+</script>
+
+
+
+
+
+    
 
 
     
