@@ -24,21 +24,12 @@ include "view-player-newform.php";
   </thead>
     <tbody>
 <?php
-while($player = $Players->fetch_assoc()) {
-?>
-  <tr>
-    <td><?php echo $player['player_id']; ?></td>
-    <td><?php echo $player['player_name']; ?></td>
-    <td><?php echo $player['player_gender']; ?></td>
-    <td>
-      <?php
-    include "view-player-editform.php";
-      ?>
-    </td>
 
 
 
-    
+
+
+
 
 <style>
   .rotate-square {
@@ -74,6 +65,30 @@ while($player = $Players->fetch_assoc()) {
 </script>
 
 
+
+
+
+
+
+
+
+
+
+while($player = $Players->fetch_assoc()) {
+?>
+  <tr>
+    <td><?php echo $player['player_id']; ?></td>
+    <td><?php echo $player['player_name']; ?></td>
+    <td><?php echo $player['player_gender']; ?></td>
+    <td>
+      <?php
+    include "view-player-editform.php";
+      ?>
+    </td>
+
+
+
+    
 
 
 
