@@ -48,9 +48,6 @@ include "view-header.php";
 
 
 
-
-
-
 if (isset($_POST['actionType']))
 {
   switch($_POST['actionType'])
@@ -94,3 +91,4 @@ $Players = selectPlayer();
 include "view-player.php";
 include "view-footer.php";
 ?>
+
