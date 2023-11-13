@@ -27,7 +27,8 @@ include "view-header.php";
   const ctx = document.getElementById('myChart');
  
   new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
+    width:30,
     data: {
     datasets: [{
         data: [30, 40, 30]
