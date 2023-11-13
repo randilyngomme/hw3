@@ -4,6 +4,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
 
 
+<div>
+<canvas id="myChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 <?php
 require_once("util-db.php");
 require_once("model-player.php");
