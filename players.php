@@ -28,17 +28,17 @@ include "view-header.php";
  
   new Chart(ctx, {
     type: 'bar',
-    width:30,
+    width:120,
     data: {
     datasets: [{
-        data: [30, 40, 30]
+        data: [70, 30]
     }],
  
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Red',
-        'Yellow',
-        'Blue'
+        'Male',
+        'Female'
+        
 ],
       options: {
     cutoutPercentage: 50, 
