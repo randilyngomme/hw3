@@ -44,7 +44,7 @@ while($player = $Players->fetch_assoc()) {
   .rotate-square {
     width: 30px;
     height: 20px;
-    background-color: #3498db;
+    background-color: purple;
     transition: transform 0.5s ease-in-out;
   }
 
