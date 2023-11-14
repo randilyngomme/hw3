@@ -9,7 +9,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
+<!-- moment.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
 
@@ -21,6 +21,8 @@ $pageTitle ="player";
 include "view-header.php";
 ?>
 <script>
+
+  //This is my Chart (:
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
@@ -59,7 +61,7 @@ if (isset($_POST['actionType']))
           icon: "success",
           });
 
-
+      //this is adding a timestamp to the success alert 
       // Get the current timestamp 
         const timestamp = moment().format('MMMM Do YYYY, h:mm:ss a');
 
