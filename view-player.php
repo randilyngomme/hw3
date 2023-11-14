@@ -35,7 +35,7 @@
     anime({
       targets: square,
       rotate: {
-        value: '360deg',
+        value: '+=360deg',
         duration: 1000, // Animation duration in milliseconds
         easing: 'easeInOutQuad' // Easing function for smoothness
       }
