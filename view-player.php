@@ -1,6 +1,5 @@
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
  <!-- Include anime.js library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -30,10 +29,9 @@
 
 <script>
   function rotateSquare() {
-    // Target the rotate-square element
     var square = document.querySelector('.rotate-square');
     
-    // Use anime.js for smooth rotation animation
+    // Use anime.js
     anime({
       targets: square,
       rotate: {
