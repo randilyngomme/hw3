@@ -10,6 +10,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
 
 <?php
 require_once("util-db.php");
@@ -56,6 +58,24 @@ if (isset($_POST['actionType']))
           text: "success",
           icon: "success",
           });
+
+
+      // Get the current timestamp 
+        const timestamp = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+        // Display the timestamp using SweetAlert2
+        Swal.fire({
+            title: 'Success',
+            text: 'Player added successfully at ' + timestamp,
+            icon: 'success'
+        });
+
+
+
+
+
+
+          
         </script>
         <?php
         
