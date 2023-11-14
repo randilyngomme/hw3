@@ -16,7 +16,7 @@
 
 <style>
   .rotate-square {
-    width: 100px;
+    width: 1000px;
     height: 20px;
     background-color: purple;
     transition: transform 0.5s ease-in-out;
