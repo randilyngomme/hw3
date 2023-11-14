@@ -21,7 +21,7 @@
     background-color: purple;
     transition: transform 0.5s ease-in-out;
     margin-top:100px;
-    margin-bottom:100px;
+    margin-bottom:25px;
   }
 
   .rotate-square.rotate {
