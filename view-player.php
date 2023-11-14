@@ -1,6 +1,6 @@
 
 
-   
+   <!-- button to rotate square  -->
    <td>
   <div class="rotate-square"></div>
   <button id="btnturn" type="hidden" class="btn btn-danger" onClick="rotateSquare(); ">
@@ -16,7 +16,7 @@
 
 <style>
   .rotate-square {
-    width: 30px;
+    width: 100px;
     height: 20px;
     background-color: purple;
     transition: transform 0.5s ease-in-out;
